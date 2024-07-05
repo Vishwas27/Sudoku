@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudoku Game</title>
+  <link rel="stylesheet" href="SUDOKU.css">
+  
+</head>
+<body>
+
+<div class="flip-card-front" >
+  <h1>Sudoku Game</h1>
+  <table id="sudoku-board"></table>
+  <button id="submit-btn" onclick="checkSolution()" disabled>Submit</button>
+  <button id="clear-btn" onclick="clearAllInputs()">Clear All</button>
+
+  <button id="solver-btn" onclick="solveSudoku()">Sudoku Solver</button>
+  <div id="result" style="margin-top: 20px;"></div>
+  </div>  
+</div>
+
+<div id="flip-card-back" style="position: relative; top: 30%;
+left: 0;right: 0;
+margin-left: auto;
+margin-right: auto;
+display: none;
+z-index: 2;
+">
+  <div id="YES_NO" >
+    <p>WILL YOU BE MY VALENTINE &#x2665; ?</p>
+    <button id="YES" class="heartbeat"
+    onclick="showAnotherBox(true)"
+    >YES &#128525;</button>
+    <button id="move" style="z-index: 2;" onmouseover="runaway(this)">NO &#128520;</button>
+  </div>
+  <div id="NOTE" class="FINAL" style="display: none ;" > 
+    <a href="https://www.canva.com/design/DAF72RGjoH8/_31F51USY4qa4ReIE27_Qg/view?utm_content=DAF72RGjoH8&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" >
+      A NOTE TO YOU >CLICK ME </a>  </div>
+</div>
+
+
+<div id="PANDA_CUTE" class="eyes" style="bottom: 10px; 
+position: absolute;">
+  <div style="position: absolute;
+  bottom: 0px; 
+  z-index: -2;">
+    <img src="PANDA.png" alt="PANDA" width="500px" height="auto">
+  </div>
+  <div class="eye">
+    <div class="pupil"></div>
+  </div>
+  <div class="eye">
+    <div class="pupil"></div>
+  </div>
+</div>
+<div class="FINAL" style="display: none ; " >
+  <div class="firework"></div>
+  <div class="firework"></div>
+  <div class="firework"></div>
+  <div class="firework"></div>
+  <div class="firework"></div>
+
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+
+</div>
+<script src="SUDOKU.js"></script>
+<script src="Cool.js"></script>
+<script src="solverButton.js"></script>
+</body>
+</html>
